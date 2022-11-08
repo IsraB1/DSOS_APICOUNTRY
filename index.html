@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DSOS</title>
+    <link rel="stylesheet" href="./src/css/bootstrap.min.css">
+</head>
+<body>
+  <div class="auth-container d-flex">
+
+    <div class="container mx-auto align-self-center">
+
+        <div class="row">
+
+            <div class="col-xxl-5 col-xl-5 col-lg-5 col-md-8 col-12 d-flex flex-column align-self-center mx-auto">
+                <div class="card mt-3 mb-3">
+                    <div class="card-body">
+
+                        <div class="row">
+                                
+                                <div class="col-md-12">
+                                    <div class="mb-4">
+                                        <label for="puesto" class="form-label">País:</label>
+                                            <select id="pais" onchange="siglas()" required="required" class="form-select" name="puesto">
+                                                <option value="" selected>Selecciona...</option>
+                                                <option value="MX" selected>México</option>
+                                                <option value="Almacenista" selected>Otro</option>
+                                                
+                                            </select>
+                                    </div>
+                                </div>
+                               
+                                <div class="col-12">
+                                    <div class="mb-4">
+                                        <label class="form-label">Código Postal:</label>
+                                        <input type="text" class="form-control" name="cp" id="cp">
+                                    </div>
+                                </div>
+
+                                <div class="col-md-12">
+                                    <div id="colonia" class="mb-3">
+                                        <label for="puesto" class="form-label">Colonia</label>
+                                            <select id="col" onchange="mifuncion()" required="required" class="form-select" name="juas">
+                                                <option value="" selected>Selecciona...</option>              
+                                            </select>
+                                    </div>
+                                </div>
+
+                                <div class="col-12">
+                                    <div class="mb-4">
+                                        <label class="form-label">Localidad:</label>
+                                        <input value="" type="text" class="form-control" name="loc" id="loc">
+                                    </div>
+                                </div>
+
+                                <div class="col-12">
+                                    <div class="mb-4">
+                                        <label class="form-label">Municipio:</label>
+                                        <input type="text" class="form-control" name="mun" id="mun">
+                                    </div>
+                                </div>
+
+                                <div class="col-12">
+                                    <div class="mb-4">
+                                        <label class="form-label">Georeferencias:</label>
+                                        <input type="text" class="form-control" name="ref" id="ref">
+                                    </div>
+                                </div>
+
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+        
+    </div>
+
+</div>
+<script src="./siglas.js"></script>
+<script src="./countrys.js"></script>
+<script src="./main1.js"></script>
+
+
+</body>
+</html>
